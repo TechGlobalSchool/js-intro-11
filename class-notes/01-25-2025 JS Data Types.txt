@@ -1,0 +1,86 @@
+
+
+String
+
+'John Doe'
+"Chicago"
+'     '
+''          -> empty string  
+
+
++ operator 
+1. concatenation (string)
+2. addition (arithmetic operator)
+
+
+TRUTHY and FALSY 
+true 
+
+false, null, undefined, 0, NaN, ''
+
+
+*** What is the difference between undefined and null?
+undefined is for variables that are declared but not assigned with a value yet
+null is used intentionally to point absence of data
+
+Required
+Street 1
+City
+State
+ZIP
+
+Optional
+Street 2 (mostly for unit/apt number)
+
+
+
+Collection: 
+
+
+JS is dynamically typed 
+let smth; // undefined 
+
+smth = 5; // number
+
+smth = 'John'; // string 
+
+smth = []; // object
+
+smth = null; // object
+
+
+Statically typed languages - compiled languages (TS, Java, C#)
+let name: string = 'John';
+name = 'James'; // allowed 
+name = 5; // Syntax Error
+
+String name = "John";
+name = 5; // Syntax Error
+
+double price = 5.5;
+
+int price2 = price;
+
+
+
+Getting first-last elements from an array
+first   -> arr[0]
+second  -> arr[1]
+
+
+last                  -> arr[arr.length - 1]
+second from the last  -> arr[arr.length - 2]
+
+
+How to create an array?
+-We can use array literals with [] or new Array() constructor
+const arr = [ 1, 2, 3];
+const arr = new Array(1, 2, 3);
+
+const arr = [ 'A', 'B' ]; 
+const arr = new Array('A', 'B');
+
+
+
+Hackerrank
+Leetcode
