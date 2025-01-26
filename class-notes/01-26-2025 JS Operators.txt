@@ -1,0 +1,126 @@
+
+
+RECAP:
+
+Data Types 
+
+1. Primitives 
+  string: used to store text data (single or double quotes)
+  number: used to store decimal or whole numbers up to 64 bits
+  boolean: used to store true or false (expression that evaluates to true to false)
+  undefined: used as an default data type for variables declared but not assigned with value
+  null: intentional absence of value for a variable
+  bigint: used to store decimal or whole numbers above 64 bits
+  symbol:
+
+2. Reference Types (Objects)
+  array: used to store multiple similar data (data types of these values are same)
+    const arr1 = [ 5, 10, 10.5 ]; 
+    const arr2 = [ true, false, false, true ];
+    const arr3 = [ 'Hello', 10, 10.6, true, {}, [] ]; 
+
+  object: used to store key-value pairs (properties) of one entity
+  const obj1 = {
+    fname: 'John',
+    lname: 'Doe',
+    age: 25
+  };
+
+  const creditCardInfo = {
+    fullname: 'John Doe',
+    number: '1234-1234-1234-1234',
+    expirationDate: '04/28',
+    securityCode: 123
+  };
+
+  creditCardInfo.bankName = 'Chase';
+  creditCardInfo.expirationDate = '04/33';
+  creditCardInfo.securityCode = 456;
+
+  '(312) 123-1234'
+  '312.123.1234'
+  '312-123-1234'
+
+OPERATORS
+1. Assignment
+= equal sign is used for assignment 
+
+let name = 'John';
+
+let age;
+age = 45;
+age = 46;
+
+ORDER OF OPERATIONS 
+1. Exponentiation
+2. Parantheses
+3. Multiplication/Division
+  3.5 Remainder
+4. Addition/Substraction
+
+
+Remainder / Modulus 
+1. if the number on the left is smaller than the one the right
+  Remainder will be the left number itself
+  8 % 9 = 8
+  100 % 200 = 100
+
+2. if the number on the left is divisible by the one the right
+  Remainder is always zero 
+  20 % 5 = 0
+  30 % 10 = 0
+  1000 % 500 = 0
+
+3. if the number on the left is bigger than the right and not divisible by the one on the right
+  Remainder will be more than zero but less than the number on the right
+  23 % 7 = 2
+  27 % 7 = 6
+  28 % 7 = 0
+
+
+JS is an interpreted language
+
+
+Increment and decrement operators are used to increase/decrease
+the value of a variable by one (1).
+
+
+salary / 52 weeks
+salary / 26
+salary / 12 months
+
+*** Difference between == and ===?
+== is used to compare ONLY values (loose comparison)
+=== is used to compare BOTH values and data types of the variables (strict comparison)
+
+
+Boolean context
+''    -> 0
+'Hi'  -> 1
+'15'  -> 1
+
+
+Number context 
+''    -> NaN or 0
+'Hi'  -> NaN 
+'15'  -> 15
+
+
+
+let x = 10, y = 20, z = “10”;
+
+x == z;           true
+x === z;          false
+y < z;            false
+x <= y;           true
+x >= z;           true
+y > x;            true
+x >= y;           false 
+(x >= z) < y;     
+
+
+(10 >= '10') < 20
+true < 20           -> true
+
+1 == true     -> true
+1 === true    -> false
