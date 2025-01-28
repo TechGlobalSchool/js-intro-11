@@ -1,0 +1,109 @@
+
+
+JS Operators
+1. Assignment Operator: = sign
+2. Shorthand Assignment Operators: +=, -=, *=, %=, **=, /=
+
+  let num = 10;
+  num %= 4;
+  console.log(num); // 2
+
+3. Arithmetic Operators: +, -, *, /, **, ++, --
+
+post vs pre increment/decrement 
+
+int i = 10;
+
+i++; // i = 10
+
+int j = 10;
+
+++j; // 11
+
+4. Comparison Operators: ==, ===, !=, !==, <, >, <=, >=
+*** All the comparison operators will evaluate to boolean (true or false)
+== vs ===
+== is used for loose comparison and it checks if only values are equal
+=== is used for strict comparison and it checks if both values and data types are equal
+
+'3' === 5   -> false 
+5 == 'five' -> false 
+5 == '5'    -> true
+5 === '5'   -> false 
+
+
+3 > 2 && 5 != 5       -> false 
+
+
+&& (AND) Operator
+_____ && ______ 
+true  && true       -> true 
+true  && false      -> false
+false && true       -> false
+false && false      -> false
+
+
+|| (OR) Operator
+_____ || ______
+true  || false      -> true 
+false || true       -> true
+true  || true       -> true 
+false || false      -> false 
+
+
+! (NOT) Operator
+
+!false    -> true 
+!true     -> false 
+
+!(5 === '5') -> true
+
+!((3 >= 3 || false) && !true)     -> true
+
+
+
+REFERENCE TYPES 
+- array, object, function
+- Math, Date, Number, BigInt, String......
+- Set, Map 
+
+
+OBJECT: all built-in objects in programming languages have their own properties
+and functions. 
+
+properties: information about the object - what it has 
+functions: abilities of the object - what it does 
+
+Number.MAX_SAFE_INTEGER; // 
+Number.MIN_SAFE_INTEGER; // 
+
+Math.PI; // 3.14
+
+Math.max(1, 2); // 2
+Math.max(1, 2, 10, 7); // 10
+
+smth(); // This is a function 
+log(); // log() is a function 
+
+
+double precision (up to 15-16 digits)
+1234567890123456
+1.00000000000001
+
+integers: 10, 5, 100
+floats / doubles: 10.5, 20.21
+
+
+isNaN()        -> global function
+Number.isNaN() -> 
+
+
+
+let num = 5;
+
+num.toString()
+num.toFixed(2)
+num.toPrecision(3)
+
+Number.isFinite(5)
+Number.isSafeInteger(235)
