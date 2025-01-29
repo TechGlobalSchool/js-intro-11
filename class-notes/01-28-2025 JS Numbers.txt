@@ -1,0 +1,71 @@
+
+
+RECAP:
+Method vs Function 
+
+Number.isFinite(5); // method 
+
+// Create a function that takes 2 number arguments and returns sum of these
+
+
+function findSum(num1, num2) {
+  return num1 + num2;
+}
+
+console.log(findSum(10, 5)); // 15
+
+Static Methods: These are the methods invoked with class or object itself
+Instance Methods: These are the methods invoked with an instance of the class or object 
+
+Number.isFinite(5); // static method 
+Math.max(3, 5); // static 
+
+
+let num1 = 10.234;
+
+num1.toFixed(1); // 10.2
+
+
+number vs bigint
+
+Number object: will have additional features: properties and methods 
+
+properties: information/state/instance variables of the object 
+    get data about the object
+
+methods: behaviors/functions of the object
+    runs a task for the object
+
+MAX_VALUE
+MIN_VALUE
+MAX_SAFE_INTEGER
+
+isFinite()
+isSafeInteger()
+toFixed()
+
+
+Account Object
+properties: accountNumber, pinCode
+methods: createAccount(), deleteAccount(), updateAccount()
+
+Math.floor(0.47191602951935563 * 3) + 3   -> 4
+Math.floor(0.5860923717534425 * 3) + 3   -> 4
+Math.floor(0.3232354803378943 * 3) + 3    -> 3
+Math.floor(0.5511186465807323 * 3) + 3   -> 4
+Math.floor(0.7505881933310556 * 3) + 3   -> 5
+
+
+
+5 - 17 both inc 
+biggerNumber - smallerNumber + 1
+17 - 5 + 1 -> 13
+
+
+
+1. External Libraries
+2. Create your own libary and functions
+
+getRandomNumber(5, 15);
+getRandomNumber(15, 5);
+
