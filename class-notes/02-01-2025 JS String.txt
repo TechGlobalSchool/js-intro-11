@@ -1,0 +1,110 @@
+
+
+String: 
+Text data
+Stored using single or double quotes 
+
+String Templates - Backticks (ES6)
+let fname = 'John';
+let lname = 'Doe';
+
+let fullname = fname + ' ' lname; // 'John Doe'
+
+let fullname = `${fname} ${lname}`; // 'John Doe'
+
+
+Static vs Instance Methods 
+
+
+        How do I invoke the method?
+
+  By Built-in Object            By creating a value and with value
+  static method                 instance method
+
+
+Math.max(); // static method 
+Number.parseInt(); // static method 
+
+let num = 25.99;
+
+num.toFixed(1); // non-static, instance method
+
+
+class Account {
+  static method1() {
+    console.log('I am a static method');
+  }
+
+  method2() {
+    console.log('I am a instance method');
+  }
+}
+
+Account.method1(); // 'I am a static method'
+
+let myAccount = new Account();
+myAccount.method2(); // 'I am a instance method'
+
+
+
+Deprecation: deprecated
+name was once a reserved keyword and it was used for a specific task but now
+it is deprecated.
+
+
+
+
+/*
+TASK: 
+ARGUMENTS: 
+RETURN:  
+DOES IT CHANGE ORIGINAL VALUE: 
+STATIC or INSTANCE: 
+*/
+
+
+
+let str = 'kdjfhglskdhglsahdglsdjhgjhdsgfjhsdg';
+
+First char: str[0]
+Second char: str[1]
+Third char: str[2]
+
+Last char: str.at(-1)
+Second from the last: str.at(-2)
+
+
+function includes(substring) {
+  return this.indexOf(substring) >= 0;
+}
+
+
+indexOf() or lastIndexOf() method
+if the result of this method is 0 or positive index -> we have the subtring found in the original String
+if the result of this method is -1 -> we don't have the subtring found in the original String
+
+
+NOTE: We'll always use slice() method to extract substrings 
+If you have 2 positive index:
+  if startIndex < endIndex, then the result is a substring including startIndex, excluding endIndex
+  'Hello'.slice(1, 3); // 'el'
+
+  if endIndex is not provided, the the result is substring including startIndex all the way to the end 
+  'Hello'.slice(2); // 'llo'
+
+  if startIndex >= endIndex, then your result is always ''
+  'Hello'.slice(3, 2); // ''
+  'Hello'.slice(3, 3); // ''
+
+
+slice() method also works with negative indices (indexes)
+In this case, you'll go backward 
+'Hello'.slice(-1); // 'o'
+'Hello'.slice(-2); // 'lo'
+'Hello'.slice(-3); // 'llo'
+
+'Chicago'.slice(-5, -2); // 'ica'
+'Chicago'.slice(-1, -4); // ''
+
+'Miami'.substring(-2, -4); // ''
+'Miami'.substring(2, 0); // 'Mi'
