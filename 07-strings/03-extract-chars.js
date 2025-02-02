@@ -80,3 +80,5 @@ console.log(str.charCodeAt(0));
 console.log(str.charCodeAt(1));
 console.log(str.charCodeAt(2));
 console.log(str.charCodeAt(10)); // NaN
+
+console.log('Hi'.at(3));

@@ -1,0 +1,73 @@
+
+
+RECAP:
+
+Changing cases: 
+toUpperCase();
+toLowerCase();
+
+
+Extract Characters:
+[] -> property access 
+at();
+charAt();
+charCodeAt();
+
+First vs Last Characters in a String
+Before
+str[0]; // first char 
+str[str.length - 1]; // last char
+
+After 
+str[0]; // first char 
+str.at(-1); // last char
+
+'Hi'[3]; // undefined 
+'Hi'.charAt(3); // ''
+'Hi'.at(3); // undefined
+
+
+Searching:
+startsWith();
+endsWith();
+includes();
+search();
+indexOf();
+lastIndexOf();
+
+
+Trimming:
+trim();
+trimStart();
+trimEnd();
+
+
+Extracting Substrings:
+slice();
+substring();
+
+Do they work with negative indices?
+slice()       -> YES
+substring()   -> NO, it converts to ZERO 
+
+How they act when startIndex if greater than endIndex?
+str.slice(5, 3); // ''
+str.substring(5, 3); // str.substring(3, 5); 
+
+
+let str1 = 'abc';
+let str2 = '123';
+
+str1 + str2; // 'abc123'
+`${str1}${str2}`; // 'abc123'
+
+str1.concat(str2); // 'abc123'
+
+'John'.concat(' ', 'is', ' ', '25', ' years old.');
+
+
+repeat() method 
+
+let str = 'ABC';
+
+let res = str.repeat(3); // 'ABCABCABC'
