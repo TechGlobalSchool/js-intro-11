@@ -1,0 +1,94 @@
+
+RECAP:
+
+Function: it is a block of code used to run a specific task
+which can be executed repeatedly.
+It can take parameters (arguments).
+It can be return (returns a value-data back when invoked) 
+or void (does not return anything but just runs a task)
+
+function launchChrome() {
+  // body
+}
+
+function goToTechGlobalTrainingApp() {
+  //
+}
+
+function loginToApp(username, password) {
+  // 
+} 
+
+launchChrome();
+goToTechGlobalTrainingApp();
+loginToApp();
+
+let actualTitle = getTitle(); // 'Apple'
+let expectedTitle = 'Welcome to TechGlobal School Training';
+
+if(actualTitle === expectedTitle) {
+  // TEST PASSED
+}
+else {
+  // FAILED
+}
+
+function getTitle() {
+  //
+}
+
+
+1. Function Declaration 
+function functionName() {
+  // body
+}
+
+function functionName(param1, param2) {
+  // body
+}
+
+REDUNDANT: no need to use it
+
+number % 2 === 0          -> true     EVEN 
+                          -> false    ODD 
+
+number % 2 !== 0          -> true     ODD 
+                          -> false    EVEN
+
+
+let fname = 'John';
+
+fname[0]; // 'J'
+
+Use slice() for extracting multiple characters-substring from a string 
+User property access [] to get a single character
+at() is recommended to be used when getting last characters using negative indexes 
+
+
+let fullname = 'alexander mark';
+
+let fullnameArr = fullname.split(' '); // ['alexander', 'mark']
+
+
+ARROW FUNCTIONS:
+const sum3 = (num1, num2) => num1 + num2;
+const initials = (fname, lname) => `${fname[0]}.${lname[0]}.`;
+
+const isEven = number => number % 2 === 0;
+
+console.log(isEven(4)); // true
+
+HOISTING: moving variable declaration to the top of the file
+1. Function Declaration
+2. Function Expression 
+3. Arrow Functions
+
+
+
+console.log(y);
+var y = 5;
+
+
+var y;
+console.log(y);
+y = 5;
