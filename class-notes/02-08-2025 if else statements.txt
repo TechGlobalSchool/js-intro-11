@@ -1,0 +1,124 @@
+
+
+if - else statements: conditional statements, control flow statements 
+
+SYNTAX:
+
+if(false) {
+  // if block - CASE TRUE
+}
+else {
+  // else block - CASE FALSE
+}
+
+condition might be a single variable or an expression that evaluates to true or false 
+false, NaN, undefined, null, 0, ''  -> falsy 
+
+
+
+let isSchool;
+
+if(isSchool) {
+  console.log('GO TO SCHOOL');
+}
+else {
+  console.log('SLEEP EXTRA HOURS');
+}
+
+
+90+ A 
+80+ B 
+70+ C 
+60+ D 
+F 
+
+let examResult = NaN;
+
+if(examResult >= 90) {
+  // A 
+}
+else if(examResult >= 80) {
+  // B
+}
+else if(examResult >= 70) {
+  // C 
+}
+else if(examResult >= 60) {
+  // D
+}
+else {
+  // F 
+}
+
+if(examResult >= 90) {
+  if(examResult >= 95) {
+    // A+
+  }
+  else {
+    // A
+  }
+}
+else {
+  if()
+}
+
+
+
+
+let password = 'Abcd123456#';
+
+if(password.length < 8) {
+  console.log('Your password is short. Provide at least 8 characters!');
+}
+else if(password.length > 16) {
+  console.log('Your password is long. Provide up to 16 characters!');
+}
+else if(!CharacterHelper.hasUppercase(password)) {
+  console.log('Your password MUST have an uppercase letter!');
+}
+else if(!CharacterHelper.hasLowercase(password)) {
+  console.log('Your password MUST have an lowercase letter!');
+}
+else if(!CharacterHelper.hasDigit(password)) {
+  console.log('Your password MUST have a digit!');
+}
+else if(!CharacterHelper.hasSpecial(password)) {
+  console.log('Your password MUST have a special character!');
+}
+else {
+  console.log('Your password is successfully created!');
+}
+
+
+
+let emailName = 'tgschool05';
+
+if(emailName.length < 6 || emailName.length > 30) {
+  console.log('Sorry, your username must be between 6 and 30 characters long.')
+}
+else if(EmailChecker.hasEmail(emailName)) {
+  console.log('That username is taken. Try another.')
+}
+else {
+  // Allow user to continue creating account
+}
+
+
+NOTE: if statement can be used without any else or else if 
+However, else block or else if block cannot be used without if statement 
+
+
+
+Short if-else omitting curly braces - ALLOWED ONLY if you have one statement in the blocks
+
+if(mood) console.log('ALL GOOD!');
+else console.log('HELL');
+
+
+
+if(condition) {
+  //statement 1
+  //statement 2
+}
+else //statement 3
+
