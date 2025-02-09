@@ -1,0 +1,150 @@
+
+
+RECAP:
+control-flow statements or conditional statements 
+By using if-else we'll control the flow of the program, different block
+of codes will be executed depending on conditions.
+
+if(condition) {
+  // block - runs if condition is true 
+}
+else  {
+  // block - runs if condition is false
+}
+
+let winner;
+
+if(a > b) {
+  winner = a;
+}
+else  {
+  winner = b;
+}
+
+if(a > b) winner = a;
+else winner = b;
+
+
+let loser = a > b ? b : a;
+
+
+let gameResult;
+
+if(x > y) {
+  gameResult = 'X won';
+}
+else if(y > x) {
+  gameResult = 'Y won';
+}
+else {
+  gameResult = 'Tie';
+}
+
+
+let gameResult = x > y ? 'X won' : y > x ? 'Y won' : 'Tie';
+
+
+NESTED if else
+
+if(5 > 10) {
+  if(true) {
+    console.log('Good morning!');
+  }
+  else {
+    console.log('Hello');
+  }
+}
+else {
+  if(undefined) console.log('Hi');
+  else if(null) console.log('Good evening!');
+  else console.log('Yay!');
+}
+
+FALSY: false, undefined, null, 0, '', NaN 
+
+if(NaN) console.log('Hello');
+else console.log('Hi');
+
+
+let referrerFullName = student5.getReferrer(); // null, '', undefined // 
+
+if(referrerFullName) {
+  console.log('This student has a referrer');
+}
+else {
+  console.log('This student DOES NOT have a referrer');
+}
+
+if(referrerFullName === undefined || referrerFullName === null || referrerFullName === '') {
+  console.log('This student DOES NOT have a referrer');
+}
+else {
+  console.log('This student has a referrer');
+}
+
+console.log(date.getFullYear()); // 2025
+console.log(date.getDay()); // current day (0-6)
+console.log(date.getHours()); // current hours (0-23)
+console.log(date.getMinutes()); // current minutes (0-59)
+console.log(date.getSeconds()); // current seconds (0-59)
+console.log(date.getMonth()); // current month (0-11)
+console.log(date.getTime()); //
+console.log(date.getDate()); // current day (1-28 for February)
+
+
+
+
+
+
+switch (dayOfWeek) { // 0
+    case 1: 
+    case 2: 
+    case 3: 
+    case 4: 
+    case 5:
+        console.log('WEEKDAY'); 
+        break;   
+    default: 
+      console.log('WEEKEND'); 
+}
+
+switch (dayOfTheWeek) { // 0
+  case 0:
+  case 6:
+    console.log("WEEKEND");
+    break;
+  default:
+    console.log("WEEKDAY");
+}
+
+switch(dayOfTheWeek){
+    case 0:
+    case 6:
+        console.log('WEEKEND')
+        break;
+    default:
+        console.log('WEEKDAY')
+}
+
+
+
+'John'.includes('a') || 'John'.includes('e')
+
+day === 0 || day === 6
+
+
+function oddEven(number) {
+  if(number % 2 === 0) {
+    return 'EVEN';
+  }
+  else {
+    return 'ODD';
+  }
+}
+
+
+
+0 35, 70, 105, 140, 175
+
+Numbers divisible by both 5 and 7 -> divisible by 35
+Numbers divisible by both 3 and 5 -> divisible by 15
