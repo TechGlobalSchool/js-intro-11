@@ -1,0 +1,108 @@
+
+
+CLI -> Command Line Interface 
+GUI -> Graphical User Interface
+
+MACOS -> Terminal 
+Windows -> Command Prompt
+
+Home Directory or Home Path:
+MAC: /Users/{username}
+Windows: C:\Users\{username}
+
+
+Root Directory or Root Path:
+MAC: / 
+Windows: C:\
+
+Directory: Folder
+
+Path: String representation of where to find a specific folder/file in your local
+
+Path of the first-program.js on my local:
+Users/techglobal/Desktop/js-intro-11/01-basics
+
+
+1. pwd (mac) vs cd (windows)
+Print working directory: where you are or which path you're on
+
+2. ls (mac) vs dir (windows) 
+Lists the existing folders/files in the current path/directory 
+
+List all items including hidden ones
+ls -a 
+dir /ah
+
+
+MAC Users: 
+Navigate to Home Directory GUI: cmd + shift + H 
+Show/hide hidden folders/files: cmd + shift + .
+
+Windows Users:
+Navigate to Home Directory GUI: C:\Users\{username}
+Show/hide hidden folders/files: Select View / Select Show / Hidden Items
+
+
+3. clear (mac) vs cls (windows) 
+Clear working CLI (Terminal or CMD)
+
+
+4. cd directoryName (mac & windows)
+It changes the directory
+
+
+5. cd / (mac & windows) 
+It changes the directory to root directory 
+
+
+6. cd ~ (mac)
+   cd %HOMEPATH% (for windows)
+   cd %userprofile% (for windows)
+It changes the directory to home directory 
+
+7. cd .. (mac & windows) 
+It changes directory to parent directory 
+
+
+8. mkdir directoryName (mac & windows) 
+Makes a new directory 
+
+NOTE: if your directory has multiple words, use "Directory Name"
+
+9. rmdir directoryName (mac & windows) 
+Removes directory 
+
+rd directoryName (windows)
+
+NOTE: if your directory has multiple words, use "Directory Name"
+NOTE: This command will delete only empty directories 
+
+
+10. rm -rf directoryName (mac)
+    rmdir /s (windows with confirmation Y/N)
+    rmdir /s /q (windows without confirmation)
+
+Removes non-empty directory
+
+11. touch fileName.ext (mac)
+    echo. > fileName.ext (windows)
+    echo "" > fileName.ext (windows)
+
+Creates a empty file 
+
+
+12. cat fileName.txt (mac) 
+    type fileName.txt (windows)
+
+Write file content
+
+
+13. rm fileName.ext (mac)
+    del fileName.ext (windows)
+
+Removes the file
+
+
+Are you familiar with Linux?
+Are you familiar with Linux commands?
+Can you tell me some Lunix commands you use daily?
