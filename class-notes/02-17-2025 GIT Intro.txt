@@ -3,5 +3,3 @@
 pushing code: publishing/sharing your code with others 
 pulling code: retrieving/gettign others code into your local
 
-Internet Explorer
-
