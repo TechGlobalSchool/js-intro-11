@@ -1,0 +1,90 @@
+
+
+GIT CONFLICT
+When 2 or more team members work on same files and they 
+push their code and merge it remote/main or remote/master
+
+Conflict happens because you did not pull the latest 
+remote/master or remote/main changes
+
+CONFLICTs happen and we need to resolve them.
+1. If it is a small conflict, just resolve it inline
+2. Pull the last changes to your local, merge it to your branch
+This will create same conflicts in your local, resolve them and push the changes 
+once again.
+
+sprint: a period of time (2 weeks)
+3-5 branches 
+7-10 commits 
+3-5 PRs
+3-5 Pull changes 
+
+
+
+Miscellaneous
+1. Can I rename my branch? How to name branches?
+    git branch 456347-dashboard-tests
+    git checkout 456347-dashboard-tests
+    git branch -m 456347-dashboard-smoke-tests
+
+2. Can I switch to another branch without committing my changes?
+Yes, on your local but it is recommended to commit your changes and then switch branch.
+
+3. Can I merge my local branches?
+Yes, first switch to your branch that you want to merge all the changes 
+Then use below command to merge the other branch into current branch 
+git merge <other-branch-name>
+
+4. Can I switch to my team member's branch? 
+  Yes.
+  git fetch       -> it updates your local with all the remote branches 
+
+5. Can I pull my team member's changes without PR into master?
+  git fetch 
+  git checkout origin/<branch-name>
+  You can do changes in this branch 
+  You can commit and push changes 
+
+  
+6. What happens if I forget the commit message?
+VI - Visual Editor to add your commit message 
+Insert mode: press i 
+You can type your commit message while in insert mode and then exit
+Exit insert mode: press ESC 
+Command mode: press :
+
+w   -> save 
+q   -> quit 
+wq  -> save & quit
+
+7. Can I change the commit message before I push?
+git commit --amend
+git commit --amend -m "New commit message"
+
+8. What is git stash and git stash apply?
+Is a way to resolve conflicts that are obvious
+
+1. I did some changes with a local branch 
+2. Then someone updated remote master and I know if I push my code, it will create conflict 
+3. Stash my changes: git stash 
+4. Switch to master in your local 
+5. Pull the changes from remote master: git pull 
+6. Switch back your local branch (you stashed changes)
+7. Merge local master changes into your local branch 
+8. Retrieve stashed changes: git stash apply 
+9. This is going to create conflicts 
+10. Resolve them, and publish your branch
+
+9. What is git fetch, git merge and git pull? Their differences?
+There are 2 ways to update your local branches with remote branches 
+Case of master branch 
+1. Switch to master in your local and run 'git pull'
+2. Switch to master in your local and run 'git fetch' to retrive all the changes without merging
+And then run 'git merge origin/master' to update your local master with remote changes
+
+10. What else I should know about GIT commands?
+git merge vs git rebase
+
+
+git log 
+This command will show all the history of commits and branches
