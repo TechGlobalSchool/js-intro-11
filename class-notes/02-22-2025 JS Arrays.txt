@@ -1,0 +1,63 @@
+
+
+Data Types: 
+Primitives:
+  string: used to store text data (quotes)
+  number: used to store numbers including decimals 
+  boolean: used to store true or false 
+  undefined: it is a variable declared but not assigned with value 
+  null: it is a variable declared and intentionally assigned with null stating absence of data
+  bigint: used to store larger number (64 bit)
+  symbol: used to store a symbol
+
+2800 S River Rd 
+Ste 310
+
+let streetLine1 = undefined;
+let streetLine2 = null;
+
+Reference Types: 
+Arrays: are used to store multiple same/similar data
+Objects: are used to store key-value pairs (properties)
+Functions: are also objects 
+
+
+Arrays: 
+
+
+
+
+
+
+
+*** constructor in all programming languages 
+Used to instantiate an object from a blueprint/templates/prototypes
+
+const arr = new Array();
+
+arr is the instance of the Array prototype
+Array is the blueprint/prototype 
+Array() is the constructor of the Array prototype 
+We use constructors with new keyword
+
+
+*** Interview Questions : mutable vs immutable
+String: immutable (original value cannot be changed)
+Array: mutable (original value can be changed)
+
+Primitives are immutable
+References are mutable
+
+
+
+unshift: add elements to the head of the array - longer array 
+shift: removes elements from the head of the array - shorter array
+
+
+
+
+TASK: 
+ARGUMENTS:
+RETURN: 
+STATIC or INSTANCE: 
+DOES IT MODIFY ORIGINAL ARRAY: 
