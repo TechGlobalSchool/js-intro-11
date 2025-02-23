@@ -1,0 +1,35 @@
+
+
+Array: is a built-in object in JS used to store multiple data.
+It has properties and methods
+
+Array() -> array constructor
+
+
+Constructor: is a special method used to instantiate its blueprint/prototype/class
+
+Array.isArray()
+
+const arr = new Array();
+
+arr.slice()
+
+SORTING ARRAYS:
+string: they will be sorted lexicographically (alphabetically)
+numbers: from smallest to biggest
+
+ASCENDING ORDER: smallest -> largest 
+DESCENDING ORDER: largest -> smallest
+
+// [ 1, 40, 15, 20, 2]
+numbers.sort(function(a, b) {
+  return a - b
+});
+
+a     b       a - b       result    memory 
+1     40      1-40        negative  1 should be listed earlier than 40 
+40    15      40-15       positive  40 should be listed later than 15
+
+
+Primitives: immutable 
+References: mutable
