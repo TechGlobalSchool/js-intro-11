@@ -1,0 +1,25 @@
+
+
+JavaScript is single-threaded.
+JS will execute the code line-by-line.
+JS can execute one task at a time. 
+
+Multi-threaded languages: C++, Java
+
+
+JavaScript is asynchronous by default.
+
+
+Call Stack: works with the LIFO (Last In First Out) principle
+Event loop: In the case of asynchronous programs, it will help JS to 
+wait for delayed operations
+
+
+Mutability
+Mutable: changing (references)
+Immutable: not changing (primitives)
+
+Shallow copy: is when you use spread operator to create a copy of a JS object (reference types)
+Spread operator will not be ideal when object is nested
+Deep copy: is when you use JSON parse and stringify methods to create a copy of a JS object
+This will completely create an independent copy which will not affect the original object
