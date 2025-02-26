@@ -1,0 +1,33 @@
+
+
+Loops: mechanism used to run a block of code repeatedly 
+
+Iteration: Each time the loops run
+
+1. for loop 
+2. for...of loop 
+3. while loop 
+4. do-while loop
+5. for...in loop
+
+
+1. FOR LOOP 
+-also known as i loop or traditional loop
+-it uses 3 expression 
+  -initialization: it is the start point for the loop 
+  -condition: it is the termination point (stop)
+  -update: the change for each iteration 
+
+SYNTAX:
+for(initialization; condition; update) {
+  // block of code to execute
+}
+
+Infinite Loop: it is an error with the loop makes it infinite and never stops.
+Be careful with your loop logic and make sure it is not infinite
+
+DO NOT USE BELOW FOR CHECKING IF A NUMBER IS ODD!!!
+i % 2 === 1
+
+USE:
+i % 2 !== 0
