@@ -1,0 +1,113 @@
+
+
+Loops: are used to run a block of code repeatedly
+Iteration: each time that loop runs
+There are 5 loops in JS: for loop, for...of loop, for...in loop, while loop, do-while loop
+
+1. for loop: traditional loop, i loop
+Syntax: 
+for (initialization; terminationCondition; update) {
+  // block to execute
+}
+
+for(let i = 0; i < 5; i++) {
+  //
+}
+
+// A loop that never run
+for(let i = 1; i < 0; i++) { // i < 0 condition will be false for the first iteration and this loop will not run
+  console.log('SATURDAY');
+}
+
+// Infinite Loop 
+for(let i = 10; i > 1; i++) {
+  console.log('SATURDAY');
+}
+
+// Infinite Loop
+for( ; ; ) {
+  console.log('SATURDAY');
+}
+
+{
+  // some code 
+  console.log('Hello');
+}
+
+// getting each character in a string
+{
+  str[i];
+}
+
+// getting each element from array 
+{
+  arr[i]
+}
+
+// getting each key-value pair from object 
+{
+  // we'll learn this
+}
+
+
+const numbers = [ 2, 6, 3, -1, 10, 8 ];
+
+let counterEven = 0;
+
+for(let i = 0; i < numbers.length; i++) {
+    if(numbers[i] % 2 === 0) counterEven++;
+}
+
+console.log(counterEven);
+
+
+When to use while over for loop:
+When the exact iteration is unknown
+
+
+
+47.5% for loop 
+47.5% for...of loop (arrays/objects and other iterables)
+3% while loop 
+1% do-while loop
+1% for...in loop 
+
+
+
+2. while loop: it works with a condition. 
+  The loop will run while the condition is true
+  The loop will terminate whenever condition is false 
+  NOTE: it first checks the condition and then decides whether to run the block or not
+
+  Syntax: 
+  while(condition) {
+    // run this block
+  }
+
+3. do-while loop: it works with a condition.
+  The loop will run while the condition is true
+  The loop will terminate whenever condition is false 
+  NOTE: the block of in do block will execute first and then the condition will be checked
+
+do {
+  // run this block
+} while(condition);
+
+
+const names = [ 'Mariia', 'Jane', 'Joe' ];
+
+John 
+J
+o 
+h 
+n
+Jane 
+J 
+a 
+n 
+e
+Alex 
+A 
+l 
+e 
+x
