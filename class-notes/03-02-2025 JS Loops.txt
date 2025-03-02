@@ -1,0 +1,26 @@
+
+
+Loops:
+
+1. for loop
+2. while loop 
+3. do-while loop 
+4. for...of loop (for each loop)
+5. for...in loop
+
+
+for...of loop: used to iterate thru iterable objects (arrays, objects)
+
+When to use for loop vs for...of to iterate arrays?
+
+
+forEach(), map(), filter(), reduce(), some(), every()
+
+
+
+for(let i = 0;  i < nums.length; i++  ){
+    if (i <= 2 || i >= nums.length -3){
+        sum += nums[i]
+    }
+}
+console.log(sum);
