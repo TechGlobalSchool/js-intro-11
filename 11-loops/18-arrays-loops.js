@@ -19,3 +19,26 @@ console.log(firstEven);
 //     break;
 //   }
 // }
+
+// Find the first city that has the odd length  -> Chicago
+const cities = ['Berlin', 'Rome', 'Chicago', 'Kyiv', 'Istanbul', 'Tokyo'];
+
+let firstOddLengthCity;
+
+for(const city of cities) {
+  if(city.length % 2 !== 0) {
+    firstOddLengthCity = city;
+    break;
+  }
+}
+
+console.log(firstOddLengthCity);
+
+// Find all the cities that has length more than 5 -> [ 'Berlin', 'Chicago', 'Istanbul' ]
+const citiesWith5PlusChars = [];
+
+for(const city of cities) {
+  if(city.length > 5) citiesWith5PlusChars.push(city);
+}
+
+console.log(citiesWith5PlusChars);

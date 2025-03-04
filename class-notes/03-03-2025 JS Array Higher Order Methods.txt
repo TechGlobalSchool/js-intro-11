@@ -1,0 +1,26 @@
+
+
+Array Methods: 
+
+Higher Order Method/Function: It is a method/function that takes another 
+callback function as an argument
+
+Callback: it is a function or method passed as an argument to another function or method
+
+sort((a, b) => a - b);
+sort((a, b) => b - a);
+
+Functional Programming
+
+forEach(callback)
+map(callback)
+filter(callback)
+reduce(callback)
+some(callback)
+every(callback)
+find(callback)
+findIndex(callback)
+
+
+filter: returns an array filtered with elements matching a condition (smaller size array)
+map: returns a same size array based on requirements
