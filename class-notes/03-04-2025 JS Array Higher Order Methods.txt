@@ -1,0 +1,56 @@
+
+
+RECAP:
+
+Array Higher Order Methods:
+1. forEach(callback)
+  -it runs the callback for each array element
+  -it is a void method (it does not return anything)
+
+[ 3, 5, 10 ].forEach((x) => {
+  console.log(x);
+})
+
+
+Output:
+3
+5
+10
+
+2. map(callback)
+  -it runs the callback for each array element, and collects the mapped elements in a new array 
+  -it returns a new array with the same size as original array 
+
+[1, 2, 3]   -> [2, 4, 6]
+['apple', 'ORANGE', 'Kiwi']   -> ['Apple', 'Orange', 'Kiwi']
+
+const newMappedArr = ['apple', 'ORANGE', 'Kiwi'].map((x) => {
+  return x[0].toUpperCase() + x.slice(1).toLowerCase();
+})
+
+console.log(newMappedArr); // ['Apple', 'Orange', 'Kiwi']
+
+const newMappedArr = [1, 2, 3].map((x) => {
+  return x % 2 === 0 ? 'even' : 'odd';
+});
+
+console.log(newMappedArr); // [ 'odd', 'even', 'odd' ]
+
+
+3. filter(callback) 
+  -it runs the callback for each array element, and collects filtered elements in a new array 
+  -it returns a new array usually with a smaller size array 
+  -the inner callback should return boolean 
+
+cosnt filteredArr = [ 5, 2, 'Hello', null, 12.5 ].filter((x) => {
+  return typeof x === 'number';
+})
+
+console.log(filteredArr); // [5, 2, 12.5]
+
+
+4. reduce(callback)
+  - it runs the callback for each array element, and collects an accumulated value
+  - it returns a single value 
+  - if initialValue is not provided, then the first array element is considered as initialValue by default
+  
