@@ -41,7 +41,7 @@ console.log(sum);
 
 console.log('<<<<<<<<<<<<<<<<<<<<<< TASK 6 >>>>>>>>>>>>>>>>>>>>>>>>');
 
-const { getRandomNumber } = require('./../utils/MathHelper.js');
+const { getRandomNumber } = require('../utils/MathHelper.js');
 
 
 //let n = getRandomNumber(1,10); 
