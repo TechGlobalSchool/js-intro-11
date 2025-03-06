@@ -163,22 +163,21 @@ const commonElements = (arr1,arr2) => {
 
 
 
-const commonElements = (arr1,arr2) => arr1.reduce((common, ele) => arr2.includes(ele) && !common.includes(ele)? common.concat(ele) : common,[])
+// const commonElements = (arr1,arr2) => arr1.reduce((common, ele) => arr2.includes(ele) && !common.includes(ele)? common.concat(ele) : common,[])
 
-const commonElements = (arr1,arr2) => {
-  let arrCommons = []
+// const commonElements = (arr1,arr2) => {
+//   let arrCommons = []
 
-  for(let ele of arr1){
-      if(arr2.includes(ele) && !arrCommons.includes(ele)) arrCommons.push(ele)
-  }
+//   for(let ele of arr1){
+//       if(arr2.includes(ele) && !arrCommons.includes(ele)) arrCommons.push(ele)
+//   }
 
-  return arrCommons;
-}
+//   return arrCommons;
+// }
 
 console.log(commonElements([ 20, 50, 70 ], [ 10, 20, 30, 50, 70 ]));
 console.log(commonElements([ 30, 50, 70 ], [ 20, 100, 300 ])); 
 console.log(commonElements([ "30", "abc", "hi" ], [ 30, "Hi", "abc" ])); 
-
 console.log(commonElements([ 1,2,2,3], [2,3,4,5]));
 
 
