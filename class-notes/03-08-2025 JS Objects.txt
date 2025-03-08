@@ -1,0 +1,19 @@
+
+
+const movie = {
+  title: 'The Batman',
+  year: 2022,
+  director: 'Matt Reeves',
+  imdbRating: 7.8,
+  img: 'https://kjdshfks'
+};
+
+
+Object is collection of key-value pairs (properties / entries)
+
+Keys: title, year, director 
+Values: The Batman, 2022, Matt Reeves
+
+Properties: title: 'The Batman', year: 2022
+
+
