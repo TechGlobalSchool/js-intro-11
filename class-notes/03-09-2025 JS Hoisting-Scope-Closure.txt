@@ -1,0 +1,84 @@
+
+
+Hoisting: is the ability to call a variable or function before their declaration
+
+var is hoisted,
+let-const are not hoisted
+
+So, JS will move all the variable declaration to the top when they are used with var keyword
+
+console.log(name); // undefined
+var name = 'John';
+
+console.log(name); // ReferenceError: Cannot access 'name' before initialization
+let name = 'John'; // same goes for const 
+
+
+functions created with traditional way (function declaration) are hoisted. So, you can use them
+before their declaration.
+
+sum(3, 5); // 8
+
+function sum(num1, num2) {
+  console.log(num1 + num2);
+}
+
+
+
+functions created with arrow or expressions cannot be hoisted. So, you can't use them 
+before their declaration.
+
+goSite(); // ReferenceError: Cannot access 'goToSite' before initialization
+
+const goToSite = function () {
+  console.log('Here is website');
+}
+
+validateTitle(); // ReferenceError: Cannot access 'validateTitle' before initialization
+
+const validateTitle =  () => {
+  console.log('Here is title');
+}
+
+
+var-let-const 
+
+1. Re-assignment 
+var-let can be re-assigned 
+const can't be re-assigned 
+
+2. hoisting 
+var is hoised (var declaration move to the top - no errors if you try to access them before their declaration - you get undefined)
+let-const are not hoisted (You get error - ReferenceError if you try to access them before their declaration)
+
+3. Scope
+var-let-const supports global and function scope
+var does not support block scope (variables declared with var within a block can be used outside the block)
+let-const support block scope (variables declared with let-const within a block CANNOT be used outside the block)
+
+
+
+Closure: closure is about preventing a variable to be updated outside the function it is declared
+However, same function will provide another function to manipulate the variable value 
+
+function outer() {
+  // private variable
+
+  // provide a function which updates the variable value 
+
+  // return that inner function to be used outside
+}
+
+const innerFunction = outer();
+innerFunction(); // update the private variable value
+
+
+
+INTERVIEW QUESTIONS:
+1. var-let-const? (reassingment, hoisting, scope)
+2. What is scope in JS? 
+3. What is hoisting?
+4. What is closure? (3-5%)
+
+
+Search (Good to know): Currying in JS
