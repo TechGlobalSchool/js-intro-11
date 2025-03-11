@@ -1,0 +1,29 @@
+
+
+Errors: 
+Errors we can fix with our code
+unexpected result caused by programmers code 
+
+Checked (syntax errors) (compile-time errors): You see the error before you run the code
+Unchecked (runtime errors): You see the error when you run the code
+
+
+Errors: caused by server, network, loads
+
+Custom Errors: 
+JS allows us to throw an error (create own errors) using throw keyword
+
+
+What is error-handling?
+How do you handle errors?
+What are some JS errors you got while coding?
+What are checked and unchecked exceptions/errors?
+What are compile-time and runtime exceptions/errors?
+
+falsy values: NaN, undefined, null, 0, false, ''
+
+
+ESLINT: define rules
+
+throw Error('My first way did not work!'); // not proper way and converted to below line
+throw new Error('My first way did not work!');
