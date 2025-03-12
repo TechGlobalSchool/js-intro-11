@@ -1,0 +1,62 @@
+
+
+ES6 - ES2015 
+
+Before ES6: JS was commonly used for web development (frontend).
+
+
+Frontend: UI (User Interface) of the application -> developed using JS 
+API: Application Programming Interface (REST, SOAP, GRAPHQL)
+Backend: Server and DB
+
+Backend Developers: Java, .NET/C#, Ruby, GO, JS
+
+After ES6: JS can be used for backend development as well.
+
+
+ES6: Interviews Questions:
+Tell me some new features added with ES6?
+-> let-const
+-> for...of loop
+-> arrow functions
+-> string templates / interpolation
+-> spread operator
+-> default parameters
+-> rest parameters 
+-> classes
+-> promises (async - await)
+-> Map, Set
+
+
+Can you tell me how many different ways you can create functions in JS?
+1. function declaration
+2. function expression
+3. arrow function
+4. constructor function
+5. IIFE 
+6. Recursive functions
+
+
+Recursion: it is a concept that a function invokes itself within its body
+// There is an infinite loop for below execution
+function printHi() {
+  printHi();
+}
+
+printHi();
+
+
+What is the difference between spread operator and the rest parameters?
+const arr = [1, 3, 4];
+
+...arr -> this will spread array elements into individual values
+
+
+function funcName(...rest) { // ...rest will collect individual arguments in an array
+  [1, 2, 3]
+}
+
+funcName(1, 2, 3)
+
+
+Vanilla JS = pure JS
