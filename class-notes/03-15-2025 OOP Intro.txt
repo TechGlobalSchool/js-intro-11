@@ -1,0 +1,88 @@
+
+
+OOP: Object Oriented Programming
+This helps us to put real life object into programming 
+
+const phone1 = {
+  brand: '',
+  color: '',
+  price: ,
+  img: ''
+}
+
+const phone2 = {
+  brand: '',
+  color: '',
+  price: ,
+  img: ''
+}
+
+const phone3 = {
+  brand: '',
+  color: '',
+  price: ,
+  img: ''
+}
+
+const phone4 = {
+  brand: '',
+  color: '',
+  price: ,
+  img: ''
+}
+
+So, the way of creating individual objects like above is too much efforts and time consuming
+
+OOP: Java, C#, C++ 
+Prototype Based: JS, TS
+
+JavaScript started to implement classes (OOP) after ES6.
+
+BEFORE ES6:
+// constructor function
+function Phone(brand, color, price) {
+  this.brand = brand;
+  this.color = color;
+  this.price = price;
+}
+
+const phone1 = new Phone('iPhone', 'Purple', 1000);
+const phone2 = new Phone('Samsung', 'Blue', 1200);
+const phone3 = new Phone('Nokia', 'Black', 750);
+
+phone1.brand; // iPhone 
+phone2.color; // Blue
+phone3.price; // 750
+
+phone1.color = 'Yellow';
+phone1.color; // Yellow
+
+
+AFTER ES6:
+class Phone {
+  constructor(brand, color, price) {
+    this.brand = brand;
+    this.color = color;
+    this.price = price;
+  }
+}
+
+const phone1 = new Phone('iPhone', 'Purple', 1000);
+const phone2 = new Phone('Samsung', 'Blue', 1200);
+const phone3 = new Phone('Nokia', 'Black', 750);
+
+phone1.brand; // iPhone 
+phone2.color; // Blue
+phone3.price; // 750
+
+phone1.color = 'Yellow';
+phone1.color; // Yellow
+
+
+Each prototype or class will have
+Properties: what it has. Phone has brand, color, price 
+Methods: what it does. Phone calls, texts
+
+
+Prototype / Class = templates, blueprints | Phone class or prototype 
+Object = instance of a class / prototype | phone1, phone2, phone3
