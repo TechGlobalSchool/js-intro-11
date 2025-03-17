@@ -1,0 +1,131 @@
+
+
+
+OOP:
+-reusability (inheritance)
+-maintainability
+-easy to read 
+
+// Lots of duplication for below objects
+const person1 = {
+  fname: 'John',
+  age: 25,
+  study: function() {
+    return true;
+  },
+  eat: function() {
+    return true;
+  }
+}
+
+const person2 = {
+  fname: 'Jane',
+  age: 22,
+  study: function() {
+    return true;
+  },
+  eat: function() {
+    return true;
+  }
+}
+
+const person3 = {
+  fname: 'Alex',
+  age: 30,
+  study: function() {
+    return true;
+  },
+  eat: function() {
+    return true;
+  }
+}
+
+const person4 = {
+  fname: 'Mariia',
+  age: 26,
+  study: function() {
+    return true;
+  },
+  eat: function() {
+    return true;
+  }
+}
+
+
+// Before ES6 
+function Person(fname, age) {
+  this.fname = fname;
+  this.age = age;
+}
+
+Person.prototype.study = function () {
+  return true;
+}
+
+Person.prototype.eat = function () {
+  return true;
+}
+
+// After ES6 - classes
+class Person {
+  constructor(fname, age) {
+    this.fname = fname;
+    this.age = age;
+  }
+  study() {
+    return true;
+  }
+  eat() {
+    return true;
+  }
+}
+
+const person1 = new Person('John', 25);
+const person2 = new Person('Jane', 22);
+const person3 = new Person('Alex', 30);
+const person4 = new Person('Mariia', 26);
+
+
+
+Inheritance Concept: Child-Parent relationship 
+
+Parent classes: Base classes: Super classes -> are inherited by child classes
+Child classes: Sub classes -> inheriting from parent classes 
+
+Classes have constructor, methods, properties
+
+
+MUST KNOWN
+ES6 Classes
+Inheritance with ES6 classes using extends keyword
+function constructor 
+super keyword - constructor
+
+
+GOOD TO KNOW
+Prototypal inheritance
+
+
+OKAY if you forgot
+prototype chain
+Object.create()
+
+Number.MAX_SAFE_INTEGER; // static property of Number prototype
+Math.max(); // static method of Math prototype
+
+class AutomationHelper {
+  static info = 'This is a helper class';
+
+  static helperMethod1() {}
+  static helperMethod2() {}
+
+  instanceMethod() {}
+}
+
+
+AutomationHelper.info; // This is a helper class
+AutomationHelper.helperMethod1(); 
+AutomationHelper.helperMethod2(); 
+
+const ah = new AutomationHelper();
+ah.instanceMethod();
