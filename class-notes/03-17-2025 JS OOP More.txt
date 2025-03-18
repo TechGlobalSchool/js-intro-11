@@ -1,0 +1,254 @@
+
+
+
+Re-using your object with spread operator 
+
+const obj1 = {
+  key1: 'value1',
+  key2: 'value2'
+};
+
+const obj2 = {
+  ...obj1,
+  newKey: 'newValue'
+};
+
+
+Re-using your object with Object.create()
+const obj1 = {
+  key1: 'value1',
+  key2: 'value2'
+};
+
+const obj2 = Object.create(obj1);
+obj2.newKey = 'newValue';
+
+
+1. Prototypes 
+function Movie(title, duration, director) {
+  this.title = title;
+  this.duration = duration;
+  this.director = director;
+}
+
+Movie.prototype.publish = function () {
+  console.log('PUBLISH');
+}
+
+const movie1 = new Movie('Batman', 180, 'John Doe');
+const movie2 = new Movie('Lord of the Rings', 175, 'Jane Doe');
+
+movie1.publish();
+movie2.publish();
+
+
+2. ES6 classes
+class Movie {
+  constructor(title, duration, director) {
+    this.title = title;
+    this.duration = duration;
+    this.director = director;
+  }
+
+  publish() {
+    console.log('PUBLISH');
+  }
+}
+
+const movie1 = new Movie('Batman', 180, 'John Doe');
+const movie2 = new Movie('Lord of the Rings', 175, 'Jane Doe');
+
+movie1.publish();
+movie2.publish();
+
+
+
+Inheritance
+1. Prototypal Inheritance
+1.1. Individual Object Inheritance 
+const obj1 = {
+  key1: 'value1',
+  key2: 'value2'
+};
+
+const obj2 = Object.create(obj1); // obj2 inherits all the properties and methods of the obj1
+obj2.newKey = 'newValue';
+
+1.2. Prototypes Inheritance 
+function Book(author, title) {
+  this.author = author;
+  this.title = title;
+}
+
+Book.prototype.sell = function() {
+  console.log('SELL');
+}
+
+function PLBook() {}
+
+PLBook.prototype = Object.create(Book.prototype);
+
+
+const book1 = new PLBook();
+book1.sell();
+
+
+
+2. ES6 Classes 
+
+class Book {
+  constructor(author, title) {
+    this.author = author;
+    this.title = title;
+  }
+  sell() {
+    console.log('SELL');
+  }
+}
+
+class PLBook extends Book {
+  constructor(author, title, compiled) {
+    super(author, title);
+    this.compiled = compiled;
+  }
+}
+
+const jsBook = new PLBook('John Doe', 'Intro to JS', false);
+const tsBook = new PLBook('John Doe', 'Intro to TS', true);
+
+jsBook.sell();
+tsBook.sell();
+
+
+INHERITANCE RULES:
+-Parent class can have multiple child classes
+-Child class can have ONLY one parent 
+-Child class inherits properties, constructors and methods of the parent class
+-Parent class CAN NEVER access any of the properties, constructors and methods of the child class
+
+*** What is constructor?
+-It is a special function/method used to create instances/objects of the classes/prototypes 
+-it is always used next new keyword to create an object
+-every class will have a default (zero-arg) constructor if you do not create a custom one
+constructor() {}
+
+*** this vs super keywords?
+this refers to the current object 
+super refers to the parent class object
+this() -> it refers to current class constructor 
+super() -> it refers to parent class constructor
+
+template = prototype = class = blueprint 
+object = instance
+
+Class is a blueprint from which many instances can be created.
+Instance/Object is instantiated from a class.
+
+
+class A {
+  // this one has 2 instance methods
+}
+
+class B extends A {
+  // has additional 3 instance methods 
+}
+
+class C extends B {
+  // has additional 5 instance methods
+}
+
+const c = new C(); // have access to all 10 methods
+
+const a = new A(); // has access to only 2 methods
+
+
+***What is encapsulation and it's benefits?
+it is making private properties for a class and providing public getters and setters 
+getters are used used retrieve the private properties - they are usually return type methods 
+setters are used to set/update the private properties - they are usually void methods and take at least 1 parameter
+
+Encapsulation increases data security.
+It can make some data readonly (via getters) or writeonly (via setters).
+
+What are the OOP Principles?
+Inheritance for reusability (extends keyword): inherit parent class properties, methods, contructors to child classes
+Encapsulation: making private properties and providing public getters and setters 
+Abstraction: parent class will have abstract methods (methods with no body/implementation) and child class must implement these methods
+Polymorphism: one object being able to get many shapes
+
+
+// JAVA
+class Animal {
+  public String name;
+  public int age;
+  private String secret;
+
+  public Animal(String name, int age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  public void eat() {
+    System.out.println("EAT");
+  }
+
+  public void setSecret(String secret) {
+    this.secret = secret;
+  }
+
+  public String getSecret(){
+    return this.secret;
+  }
+}
+
+
+class Dog extends Animal {
+  public String breed;
+
+  public Dog(String breed) {
+    this.breed = breed;
+  }
+
+  public void protect() {
+    System.out.println("PROTECT");
+  }
+}
+
+// Polymorphism
+const dog1 = new Dog();
+const dog2 = new Animal();
+
+dog2.protect(); // compilation is fine but when we run we'll get error
+
+
+abstract class Teacher {
+  public abstract void teach();
+  public abstract void giveTask();
+}
+
+class PT extends Teacher { // Error - this class MUST implement Teacher class methods
+  @Override
+  public void teach() {
+    //body
+  }
+
+  @Override
+  public void giveTask() {
+    //body
+  }
+}
+
+class MathTeacher extends Teacher {
+   @Override
+  public void teach() {
+    //body
+  }
+
+  @Override
+  public void giveTask() {
+    //body
+  }
+}
+
+
+instance variables = properties = fields = states
