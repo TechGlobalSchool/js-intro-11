@@ -35,7 +35,6 @@ const author = new Author('George R. R.', 'Martin', 'United States', [ book1, bo
 
 console.log(author.getFullName());
 
-
 // for...of loop
 // for(const book of author.getBooks()) {
 //   console.log(book);
