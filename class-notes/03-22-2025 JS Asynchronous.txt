@@ -1,0 +1,41 @@
+
+
+JS is single threaded. (Multitasking / Multithreading is not possible.)
+JS is asynchronous.
+
+Handling asynchronous code: we need to this frequently when writing automated
+scripts because there will be test failures as some steps will not wait for the previous
+step to complete.
+
+
+How can we handle asynchronous code?
+1. callbacks (old not preferred)
+2. promises (es6)
+3. async-await (es6)
+
+
+TEST CASE: 
+Go to https://www.carvana.com/
+Click on Financing
+Validate "FINANCING MADE EASY" heading is visible
+
+                    Promise States 
+                        pending 
+
+                    IS THERE ERROR?
+            YES                       NO 
+          rejected                 fulfilled
+
+
+
+goto()
+click()
+fill()
+locator()
+
+
+test('Test name', async () => {
+  await page.goto('www.google.com')
+  await page.locator('search input').fill('JavaScript')
+  await page.locator('search button').click()
+})
