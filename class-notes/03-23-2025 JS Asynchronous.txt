@@ -16,3 +16,14 @@ Validate the "Choose your location" dialog is visible (0.3)
 1. callbacks 
 2. promises 
 3. async-await
+
+
+JS Modules
+CommonJS Modules (module.exports, require)
+ES6 Modules (export, import)
+
+
+NodeJS
+NPM: Node Package Manager 
+
+We can install, update or uninstall some external packages/libraries using npm 
