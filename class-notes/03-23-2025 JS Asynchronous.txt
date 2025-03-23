@@ -1,0 +1,18 @@
+
+
+
+Asynchronous JS:
+
+AJAX: AJAX (Asynchronous JavaScript and XML) is a web development technique that 
+enables web pages to update content dynamically without requiring a full page reload.
+
+TEST CASE:
+Go to https://www.amazon.com/ (0.5 seconds)
+Click on location header item (0.2)
+Validate the "Choose your location" dialog is visible (0.3)
+
+
+3 ways to handle asynchronous operations/code 
+1. callbacks 
+2. promises 
+3. async-await
