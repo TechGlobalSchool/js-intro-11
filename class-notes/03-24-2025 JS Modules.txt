@@ -1,0 +1,15 @@
+
+
+
+JS Modules
+
+Creating small-reusable, easy to maintain components (functions, objects, classes)
+to be exported and reused anywhere in your project by importing.
+
+Or, sometimes we install some ready packages (NPM) and these are stored in node_modules
+and we can import them to use anywhere within our project.
+
+
+There is 2 ways to create/use JS Modules 
+1. CommonJS: mostly used with NodeJS 
+2. ES6 Modules: mostly used with browsers
