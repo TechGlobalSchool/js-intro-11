@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- User doesn't see -->
+    <title>HTML CSS Tutorial</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="html, css, tutorial, programming" />
+    <meta name="description" content="We teach html and css" />
+    <meta name="author" content="John Doe" />
+    <style>
+      p {
+        color: green;
+        /* font-size: 40px; em, rem */
+        font-size: 3em;
+        text-align: center;
+      }
+
+      div {
+        background-color: rgb(228, 228, 228);
+      }
+      img {
+        border: 5px solid blue;
+        border: 5px dashed blue;
+        border: 5px groove blue;
+      }
+    </style>
+    <!-- External css file -->
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <!-- Heading elements 1-6 -->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <!-- Paragraph -->
+    <p>Lorem ipsum dolor sit amet.</p>
+    <!-- bold text -->
+    <p><strong>Bold text</strong></p>
+    <!-- Italic text -->
+    <p><em>Italic text</em></p>
+    <!-- Horizontal line -->
+    <hr />
+    <!-- Break -->
+    <p>
+      Lorem ipsum, dolor sit <br />
+      amet consectetur adipisicing elit.
+    </p>
+
+    <!-- Images -->
+    <!-- Image from network -->
+    <img
+      src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ3Hv6iGG5mrI76aruo7gRz7BTVzMs1SV2wo6hi-ohzY7bF6bxFCYLTqNsCO8GdB8jt2lHehNqcpDfRNYEJ-utWtQ"
+      alt="lion"
+      height="150px"
+      width="200px"
+    />
+    <!-- Local image -->
+    <img src="./images.webp" alt="lion" />
+
+    <!-- Links -->
+    <!-- Redirect to outside of index.html -->
+    <div>
+      <a href="https://www.google.com/">This goes to google.com</a>
+      <br />
+      <a href="https://www.google.com/" target="_blank"
+        >This goes to google.com on new tab</a
+      >
+      <br />
+      <!-- Local file -->
+      <a href="./semantic.html">This goes to semantic.html</a>
+
+      <p>Image wrapped inside link</p>
+      <a href="http://puppies.herokuapp.com/" target="_blank"
+        ><img src =
+        https://progameguides.com/wp-content/uploads/2020/10/adopt-me-halloween-update-900x506.jpg
+        alt = "Image not found" width="250" height="150">
+      </a
+      >
+    </div>
+
+    <!-- Lists -->
+     <!-- Unordered lists -->
+      <h4>Favorite colors</h4>
+      <ul>
+        <li>Green</li>
+        <li>Red</li>
+        <li>Blue</li>
+      </ul>
+      <!-- Ordered list -->
+       <h4>My schedule for today</h4>
+       <ol>
+          <li>Class</li>
+          <li>Lunch</li>
+          <li>Dinner</li>
+          <li>Sleep</li>
+       </ol>
+
+       <!-- Styling of elements -->
+        <p style="color: red">Lorem ipsum dolor sit.</p>
+        <p style="color: red">Lorem ipsum dolor sit.</p>
+
+        <!-- Id or class attributes -->
+         <p id="author">Author Name</p>
+
+         <div class="box box1">Box 1</div>
+         <div class="box box2">Box 2</div>
+         <div class="box box3">Box 3</div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+  </body>
+</html>

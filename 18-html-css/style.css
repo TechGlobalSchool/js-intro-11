@@ -1,0 +1,24 @@
+h1 {
+  color: purple;
+  opacity: 0.2;
+}
+
+#author {
+  font-size: 24px;
+  color: blue;
+}
+
+/* Common box styles */
+.box {
+  border: 1px solid;
+}
+/* Individual box styles */
+.box1 {
+  color: red;
+}
+.box2 {
+  color: blue;
+}
+.box3 {
+  color: orange;
+}
