@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Tables</title>
+    <style>
+      table {
+        min-width: 800px;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+      }
+      table,
+      tr,
+      th,
+      td {
+        border: 1px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tables</h1>
+
+    <table>
+      <!-- First row -->
+      <tr>
+        <!-- Table heading -->
+        <th>Monday</th>
+        <th>Tuesday</th>
+      </tr>
+      <!-- Second row -->
+      <tr>
+        <!-- Table data -->
+        <td>Study</td>
+        <td>Relax</td>
+      </tr>
+    </table>
+
+    <table>
+      <!-- First row -->
+      <thead>
+        <tr>
+          <!-- Table heading -->
+          <th>Monday</th>
+          <th>Tuesday</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Second row -->
+        <tr>
+          <!-- Table data -->
+          <td>Study</td>
+          <td>Relax</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">Footer</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

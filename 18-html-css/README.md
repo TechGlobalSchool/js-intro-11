@@ -16,14 +16,21 @@
   - `hr` - horizontal line
   - `br` - break
   - `div` - block elements
-  - **Semantic Elements Examples**
+  - `img` - image element
+  - `a` - anchor element. link
+  - `ul` - unordered lists
+  - `ol` - ordered lists
+  - `li` - child list element
+  - **Semantic Elements Examples** (Semantic = Meaningful)
+  - header, main, section, nav, footer
 
 
 ## Styling
 1. Inline styling: Apply styles right inside to the element itself. But its harder to maintain and manage. 
 2. Internal styling: Styles are inside head section
-
-- CSS specificity: inline > internal
+3. External styling: Outsourcing styles into separate css file
+- You can style elements using their tag, id, class
+- CSS specificity: inline > internal > external
 
 
 ## Element attributes
@@ -35,3 +42,26 @@
 Notes:
 - **Nesting**: Render element inside another element
 
+
+# Day 2
+## HTML tables
+- Table is html element
+- Can be used to display tabular data
+- `table` - parent element
+- `tr` - Table row element
+- `th` - Table Heading
+- `td` - Cell data
+<!-- Optional elements -->
+- `thead` - Group head elements
+- `tbody` - Group content of table data
+- `tfoot` - Group footer table data
+
+
+## HTML Forms
+- `form` - Most parent element
+- `label` - Label/text for input element
+- `input` - Used to take user information
+  - text
+  - email
+
+- `button` - Button element
