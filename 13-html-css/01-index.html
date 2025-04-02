@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            width: 200px;
+            height: auto;
+        }
+        .resized-img {
+            width: 400px;
+            height: 300;
+        }
+        .product-container{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap; /* allows stacking on small screens */
+            gap: 20px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Our Products</h1>
+      <div class="product-container">
+        <div class="products">
+            <img src="https://placehold.co/400" class= "resized-img ">
+            <h3>Product 1</h3>
+            <p>$19.99</p>
+            <p>A brief description of the product.</p>
+        </div>
+        <div>
+            <img src="https://placehold.co/400" class= "resized-img ">
+            <h3>Product 2</h3>
+            <p>$24.99</p>
+            <p>Another brief description of the product .</p>
+        </div>
+        <div>
+            <img src="https://placehold.co/400" class= "resized-img ">
+            <h3>Product 3</h3>
+            <p>$29.99</p>
+            <p>Yet another brief description of the product.</p>
+        </div>
+    </div>
+</body>
+</html>
