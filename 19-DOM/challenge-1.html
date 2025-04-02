@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Challenge 1</h1>
+
+    <script>
+      /*
+      1. Ask for the user's name:
+        Use prompt() to collect the user's name.
+        If the user provides a name, display a welcome message using alert().
+        If no name is entered, display an error message in the console and exit.
+      2. Ask if they want to continue:
+        Use confirm() to ask if they want to proceed.
+        If they confirm, show an alert saying they chose to continue.
+        If they cancel, show an alert saying they canceled the action.
+      3. Log screen details in the console:
+        Log innerWidth (browser window width).
+        Log innerHeight (browser window height).
+      4. Reload the page after 10 seconds:
+        Display a message in the console informing the user that the page will reload.
+        Use setTimeout() with window.location.reload() to refresh the page after 10 seconds.
+    */
+
+      // Couple answers from students
+
+      // 1. Rana
+      // let userName = prompt("Please enter your name:");
+      //     if (userName) {
+      //         alert("Welcome, " + userName + "!");
+      //         let userWantsToContinue = confirm("Do you want to continue?");
+      //         if (userWantsToContinue) {
+      //             alert("You chose to continue.");
+      //         } else {
+      //             alert("You canceled the action.");
+      //         }
+      //         console.log("Browser window width (innerWidth): " + window.innerWidth);
+      //         console.log("Browser window height (innerHeight): " + window.innerHeight);
+      //         console.log("The page will reload in 10 seconds...");
+      //         setTimeout(function() {
+      //             window.location.reload();
+      //         }, 10000);
+      //     } else {
+      //         console.error("No name entered. Exiting.");
+      //     }
+
+      // 2. Omar
+      // const promptAns = prompt("whats username");
+      // if (promptAns) {
+      //   console.log(`Welcome ${promptAns}`);
+      // } else throw new Error("Nothing shown");
+      // const confirmAns = confirm("Do you want to continue");
+      // if (confirmAns) {
+      //   window.alert("You have chosen to continue");
+      // } else window.alert("You have chosen to cancel");
+      // console.log(innerWidth);
+      // console.log(innerHeight);
+      // setTimeout(() => {
+      //   window.location.reload();
+      // }, 10000);
+
+      // 3. Beatrice
+      // let userName = prompt("Enter your name here:");
+      // console.log(`User Name: ${userName}`);
+      // if (!userName) {
+      //   alert(`Error, name not entered.`);
+      // }
+      // // !!!! TODO: Suppose to stop here if not name entered
+      // let proceed = confirm("Do you want to proceed?");
+      // if (proceed) {
+      //   alert("You chose to continue.");
+      // } else {
+      //   alert("You canceled the action.");
+      // }
+      // console.log(`innerWidth: ${window.innerWidth}`);
+      // console.log(`innerHeight: ${window.innerHeight}`);
+      // console.log("The page will reload in 10 seconds...");
+      // setTimeout(() => {
+      //   window.location.reload();
+      // }, 10000);
+
+      // 4. Berkay
+      // const userName = prompt("Enter your username:");
+      // if (userName) {
+      //   window.alert("Welcome");
+      // } else {
+      //   throw new Error("Username is empty!");
+      // }
+      // const toContuinue = confirm("Do you want to continue?");
+      // if (toContuinue) {
+      //   alert("Chose to continue");
+      // } else {
+      //   alert("Do not continue.");
+      // }
+      // console.log(`Window height: ${window.innerHeight}`);
+      // console.log(`Window width: ${window.innerWidth}`);
+      // console.log("page will continue in 10 seconds.");
+      // setTimeout(() => {
+      //   window.location.reload();
+      // }, 10000);
+
+      // 5. Eddie
+      let username = prompt("Input your username:");
+      if (username) {
+        greetAndReload();
+      } else {
+        showError();
+      }
+
+      function reload() {
+        console.log(`Page will reload in 10 seconds`);
+        setTimeout(() => {
+          window.location.reload();
+        }, 10000);
+      }
+      function greetAndReload(){ 
+        alert(`Welcome, ${username}`);
+        if (confirm(`Press OK to proceed`)) {
+          alert(`You clicked OK to proceed`);
+          printScreenSize();
+        } else {
+          alert(`You clicked Cancel`);
+        }
+        reload();
+      }
+      function showError() {
+        console.error("ERROR: No username supplied");
+      }
+      function printScreenSize() {
+        console.log(`Height `, innerHeight);
+        console.log(`Width `, innerWidth);
+      }
+    
+      const promptAsk = prompt(`What's your name?`);
+      if (promptAsk) {
+      }
+    </script>
+  </body>
+</html>
