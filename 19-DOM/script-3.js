@@ -88,4 +88,34 @@ if(randomNumber < 5) {
 }
 
 
+/**
+ * Styling elements using JavaScript
+ */
 
+const containerEl = document.querySelector('#container');
+const boxEls = document.querySelectorAll('.box');
+
+console.log(containerEl.style) // CSSStyleDeclaration {...}
+containerEl.style.border = "1px solid";
+
+// Didn't work
+boxEls.forEach(boxEl => {
+  console.log("boxEl", boxEl);
+  boxEl.style.backgroundColor = 'lightgray';
+  boxEl.style.fontSize = '40px';
+})
+
+// for(let box of boxEls) {
+//   console.log("boxEl", box);
+// }
+
+// for (let i = 0; i < boxEls.length; i++) {
+//   const box = boxEls[i];
+//   console.log("boxEl", box);
+// }
+
+console.log(containerEl.previousSibling);
+console.log(containerEl.nextSibling);
+
+console.log(containerEl.previousElementSibling);
+console.log(containerEl.nextElementSibling);

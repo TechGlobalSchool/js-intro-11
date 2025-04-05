@@ -48,4 +48,6 @@ appendChild(node1, `<p>Hello</p>`) // fail
 - className: returns the class of an element as string
 - classList: Special object with methods to add/remove/toggle a single class.
 
-
+## Styling
+- We can style any element using JavaScript
+- element.style = CSSStyleDeclaration
