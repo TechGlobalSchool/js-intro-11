@@ -31,9 +31,28 @@
   </ul>
 
   <script>
-  // Your code here
+    // 1. Add click event listener to button
+    const btn = document.querySelector('button');
 
-   // <li>Potato</li>
+    // You could also do form.submit instead of button.click. Ex: form.addEventListener('submit', () => {})
+    btn.addEventListener('click', (e) => {
+      e.preventDefault(); // prevents page refresh
+
+      // 2. Grab input value
+      const inputEl = document.getElementById('item-input');
+      const item = inputEl.value; // This will give you input value
+
+      // 3. Create item element (li)
+      const li = document.createElement('li');
+      li.textContent = item;
+      
+      // 4. Append it to item-list
+      const itemWrapper = document.getElementById('item-list');
+      itemWrapper.append(li); // appendChild
+      // Optional: itemWrapper.innerHTML += `<li>${item}</li>`;
+    })
+
+
 
   </script>
 </body>
