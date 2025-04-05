@@ -44,7 +44,7 @@ console.log("customElement", customElement);
 /**
  * Change DOM attributes
  */
-const lionImage = document.querySelector('img');
+const lionImage = document.querySelector('#lion');
 
 // 1
 console.log(lionImage.src);
