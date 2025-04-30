@@ -358,7 +358,7 @@ const countMultipleWords = ( arr ) => {
 }
 
 // Test cases
-console.log(countMultipleWords(["foo", "", " ", "foo bar", " foo", '    ']));           // -> 1
+console.log(countMultipleWords(["foo", "", " ", "foo bar", " foo", '   FDS sdgsdg  ']));           // -> 1
 console.log(countMultipleWords(["foo", "bar", "foobar", " foobar "]));         // -> 0
 console.log(countMultipleWords(["f o o", "b a r", "foo bar", " foo bar "]));    // -> 4
 console.log(countMultipleWords([])); // 0
@@ -370,7 +370,7 @@ const countMultipleWords1 = (arr) => {
 };
 
 // Test cases
-console.log(countMultipleWords1(["foo", "", " ", "foo bar", " foo", '    ']));           // -> 1
+console.log(countMultipleWords1(["foo", "", " ", "foo bar", " foo", '   FDS sdgsdg  ']));           // -> 1
 console.log(countMultipleWords1(["foo", "bar", "foobar", " foobar "]));         // -> 0
 console.log(countMultipleWords1(["f o o", "b a r", "foo bar", " foo bar "]));    // -> 4
 console.log(countMultipleWords1([])); // 0
