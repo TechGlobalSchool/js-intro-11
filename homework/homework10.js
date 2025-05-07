@@ -24,27 +24,54 @@ console.log(calculateTotalPrice1({apple: 3, mango: 1}));
 
 console.log('<<<<<<<<<<<<<<< TASK 2 >>>>>>>>>>>>>>>>');
 
-const calculateTotalPrice2 = ( items ) => {
-    const priceList = {
-        apple: 2.00,
-        orange: 3.29,
-        mango: 4.99,
-        pineapple: 5.25
-    };
 
-    let total = 0;
-
-    for (const [item, quantity] of items) {
-        if (priceList[ item ]) {
-            total += priceList[ item ] * quantity;
+    function calculateTotalPrice2(items) {
+        const prices = {
+            Apple: 2.00,
+            Orange: 3.29,
+            Mango: 4.99,
+            Pineapple: 5.25
+        };
+    
+        const quantities = {
+            Apple: items.Apple || 0,
+            Orange: items.Orange || 0,
+            Mango: items.Mango || 0,
+            Pineapple: items.Pineapple || 0
+        };
+    
+        let appleCost = 0;
+        for (let i = 1; i <= quantities.Apple; i++) {
+            if (i % 2 === 0) { 
+                appleCost += prices.Apple * 0.5;
+            } else {
+                appleCost += prices.Apple;
+            }
         }
+    
+        let mangoCost = 0;
+        let freeMangoes = 0;
+        for (let i = 1; i <= quantities.Mango; i++) {
+            if (i % 4 === 0) { 
+               
+                freeMangoes++;
+            }
+        }
+        mangoCost = (quantities.Mango - freeMangoes) * prices.Mango;
+    
+        const orangeCost = quantities.Orange * prices.Orange;
+        const pineappleCost = quantities.Pineapple * prices.Pineapple;
+    
+        const total = appleCost + mangoCost + orangeCost + pineappleCost;
+
+        return Math.round(total * 100) / 100;
     }
 
-    return total;
-}
-
-console.log(calculateTotalPrice2({apple: 3, mango: 1}));
-
+    console.log(calculateTotalPrice2({ Apple: 3, Mango: 5 }));
+    console.log(calculateTotalPrice2({ Apple: 4, Orange: 3, Mango: 8 }));
+    console.log(calculateTotalPrice2({ Apple: 4, Pineapple: 1, Orange: 1, Mango: 3 }));
+    console.log(calculateTotalPrice2({ Apple: 0, Pineapple: 0, Orange: 0 }));
+    
 
 console.log('<<<<<<<<<<<<<<< TASK 3 >>>>>>>>>>>>>>>>');
 
@@ -86,4 +113,14 @@ function reverseNumber ( num ){
 }
 
 console.log(reverseNumber( 371 ));
+
+console.log('<<<<<<<<<<<<<<< TASK 6 >>>>>>>>>>>>>>>>');
+
+function doubleOrTriple( numArr, bool) {
+    
+    return numArr.map((num ) => bool ? num * 2 : num * 3);
+}
+
+console.log(doubleOrTriple([1, 5, 10], true));
+console.log(doubleOrTriple([3, 7, 2], false));
 
