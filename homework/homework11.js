@@ -126,3 +126,15 @@ function sumDigitsDouble( str ) {
 
 console.log(sumDigitsDouble("Javascript"));
 console.log(sumDigitsDouble("23abc45"));
+
+
+
+console.log('<<<<<<<<<<<<<<<< TASK 8 >>>>>>>>>>>>>>>>');
+
+   // I can not come up with the logic myself
+   // I can not even read and understand this on AI
+   // I would rather not submit the code
+   // I am unable to read
+   // No disrespect but. I have to work to manage my life at same time with school. 
+   // I really do not have time to invest too much time on it.
+   // I will work on it after watching your video to understand it.
